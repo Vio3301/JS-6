@@ -1,0 +1,36 @@
+body{
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+}
+#snow{
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+}
+#snow .flake{
+    width: 20px;
+    height: 20px;
+    background: rgba(74, 74, 245, 0.726);
+    border-radius: 100%;
+    position: absolute;
+
+}
+
+
+#snow .falling{
+    animation: fall 5s;
+    animation-fill-mode: forwards;
+}
+#snow .fading{
+    animation: fade 5s;
+}
+
+@keyframes fall{
+    from{top: 0}
+    to{top: 500px;}
+}
+
+@keyframes fade{
+    from{opacity: 1;}
+    to {opacity: 0; }
+}
